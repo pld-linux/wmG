@@ -10,6 +10,9 @@ Source0:	http://www.ductape.net/~reeve/downloads/%{name}-%{version}.tar.gz
 Source1:	%{name}-xsession.desktop
 URL:		http://www.ductape.net/~reeve/projects.html#wmG
 BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gnome-libs-devel
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/X11/GNOME
@@ -26,7 +29,10 @@ wmG jest zgodnym z GNOME minimalistycznym zarz±dc± okien dla X.
 %setup -q
 
 %build
+%{__aclocal} -I macros
 %{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
@@ -45,7 +51,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING ChangeLog NEWS README
+%doc AUTHORS
 %attr(755,root,root) %{_bindir}/*
 %{_wmpropsdir}/*
 %{_datadir}/xsessions/%{name}.desktop
