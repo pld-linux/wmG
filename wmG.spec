@@ -25,7 +25,7 @@ wmG jest zgodnym z GNOME minimalistycznym window manad¿erem dla X.
 %setup -q
 
 %build
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 
