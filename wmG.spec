@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 wmG is a GNOME-compliant minimalistic window manager for X.
 
 %description -l pl
-wmG jest zgodnym z GNOME minimalistycznym window manad¿erem dla X.
+wmG jest zgodnym z GNOME minimalistycznym zarz±dc± okien dla X.
 
 %prep
 %setup -q
