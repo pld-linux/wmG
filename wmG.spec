@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Window Managers
 Source0:	http://www.ductape.net/~reeve/downloads/%{name}-%{version}.tar.gz
+# Source0-md5:	b3e5b3a2e65bc44cca40d80a8485392e
 URL:		http://www.ductape.net/~reeve/projects.html#wmG
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
