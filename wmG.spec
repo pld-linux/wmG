@@ -12,7 +12,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/X11/GNOME
 %define		_localstatedir	/var
-%define		_wmpropsdir	%{_datadir}/wm-properties
+%define		_wmpropsdir	/usr/share/wm-properties
 
 %description
 wmG is a GNOME-compliant minimalistic window manager for X.
