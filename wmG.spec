@@ -35,13 +35,11 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	wmdatadir=%{_wmpropsdir}
 
-gzip -9nf AUTHORS COPYING ChangeLog NEWS README
-
 %clean
 rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {AUTHORS,COPYING,ChangeLog,NEWS,README}.gz
+%doc AUTHORS COPYING ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_wmpropsdir}/*
