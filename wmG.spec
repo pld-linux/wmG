@@ -5,12 +5,11 @@ Release:	1
 License:	GPL
 Group:		"X11/Window Managers"
 Source:		wmG-0.14.8.tar.gz
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_sysconfdir	/etc/X11/GNOME
 %define		_localstatedir	/var
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 wmG is a GNOME-compliant minimalistic window manager for X.
