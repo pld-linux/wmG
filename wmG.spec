@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Window Managers
 Source0:	http://www.ductape.net/~reeve/downloads/%{name}-%{version}.tar.gz
 # Source0-md5:	b3e5b3a2e65bc44cca40d80a8485392e
+Source1:	%{name}-xsession.desktop
 URL:		http://www.ductape.net/~reeve/projects.html#wmG
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,9 +32,13 @@ wmG jest zgodnym z GNOME minimalistycznym zarz±dc± okien dla X.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	wmdatadir=%{_wmpropsdir}
+
+install -d $RPM_BUILD_ROOT%{_datadir}/xsessions
+install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/xsessions/%{name}.desktop
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -43,3 +48,4 @@ rm -fr $RPM_BUILD_ROOT
 %doc AUTHORS COPYING ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_wmpropsdir}/*
+%{_datadir}/xsessions/%{name}.desktop
