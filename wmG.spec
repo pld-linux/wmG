@@ -10,7 +10,6 @@ URL:		http://www.ductape.net/~reeve/projects.html#wmG
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 %define		_sysconfdir	/etc/X11/GNOME
 %define		_localstatedir	/var
 %define		_wmpropsdir	%{_datadir}/wm-properties
