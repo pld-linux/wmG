@@ -1,12 +1,12 @@
 Summary:	A small, lightweight GNOME window manager
 Summary(pl):	Ma³y zarz±dca okien do GNOME
 Name:		wmG
-Version:	0.14.8
-Release:	2
+Version:	0.15.0
+Release:	1
 License:	GPL
 Group:		X11/Window Managers
 Source0:	http://www.ductape.net/~reeve/downloads/%{name}-%{version}.tar.gz
-# Source0-md5:	b3e5b3a2e65bc44cca40d80a8485392e
+# Source0-md5:	b2ca0bdc98715b24106164b5618d5c19
 Source1:	%{name}-xsession.desktop
 URL:		http://www.ductape.net/~reeve/projects.html#wmG
 BuildRequires:	autoconf
