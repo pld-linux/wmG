@@ -5,10 +5,6 @@ Version:	0.14.8
 Release:	2
 License:	GPL
 Group:		X11/Window Managers
-Group(de):	X11/Fenstermanager
-Group(es):	X11/Administraadores De Ventanas
-Group(fr):	X11/Gestionnaires De Fenêtres
-Group(pl):	X11/Zarz±dcy Okien
 Source0:	http://www.ductape.net/~reeve/downloads/%{name}-%{version}.tar.gz
 URL:		http://www.ductape.net/~reeve/projects.html#wmG
 BuildRequires:	autoconf
