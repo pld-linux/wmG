@@ -3,7 +3,7 @@ Name:		wmG
 Version:	0.14.8
 Release:	1
 License:	GPL
-Group:		"X11/Window Managers"
+Group:		X11/Window Managers
 Source:		wmG-0.14.8.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
