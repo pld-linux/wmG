@@ -6,3 +6,4 @@ TryExec=wmG
 Name=WMG
 Comment=A small, lightweight GNOME window manager
 Comment[pl]=Mały zarządca okien dla GNOME
+# vi: encoding=utf-8
