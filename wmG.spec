@@ -10,6 +10,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 %define		_sysconfdir	/etc/X11/GNOME
 %define		_localstatedir	/var
+%define		_wmpropsdir	%{_datadir}/wm-properties
 
 %description
 wmG is a GNOME-compliant minimalistic window manager for X.
@@ -22,7 +23,9 @@ wmG is a GNOME-compliant minimalistic window manager for X.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	wmdatadir=%{_wmpropsdir}
 
 gzip -9nf AUTHORS COPYING ChangeLog NEWS README
 
@@ -33,4 +36,4 @@ rm -fr $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {AUTHORS,COPYING,ChangeLog,NEWS,README}.gz
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/gnome/wm-properties/*
+%{_wmpropsdir}/*
