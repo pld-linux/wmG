@@ -18,7 +18,7 @@ wmG is a GNOME-compliant minimalistic window manager for X.
 %setup -q
 %build
 %configure
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
