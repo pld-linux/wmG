@@ -1,5 +1,5 @@
-Summary:	A small, lightweight GNOME window manager.
-Summary(pl):	Maly GNOME window manager.
+Summary:	A small, lightweight GNOME window manager
+Summary(pl):	Ma³y zarz±dca okien do GNOME
 Name:		wmG
 Version:	0.14.8
 Release:	2
@@ -7,7 +7,9 @@ License:	GPL
 Group:		X11/Window Managers
 Group(de):	X11/Fenstermanager
 Group(pl):	X11/Zarz±dcy Okien
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://www.ductape.net/~reeve/downloads/%{name}-%{version}.tar.gz
+URL:		http://www.ductape.net/~reeve/projects.html#wmG
+BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -19,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 wmG is a GNOME-compliant minimalistic window manager for X.
 
 %description -l pl
-wmG jest zgodnym z GNOME minimalistycznym window manadzerem dla X.
+wmG jest zgodnym z GNOME minimalistycznym window manad¿erem dla X.
 
 %prep
 %setup -q
