@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=XSession
+Exec=wmG
+TryExec=wmG
+Name=WMG
+Comment=A small, lightweight GNOME window manager
+Comment[pl]=Ma³y zarz±dca okien dla GNOME
