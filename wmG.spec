@@ -1,5 +1,5 @@
 Summary:	A small, lightweight GNOME window manager
-Summary(pl):	Ma³y zarz±dca okien do GNOME
+Summary(pl.UTF-8):   MaÅ‚y zarzÄ…dca okien do GNOME
 Name:		wmG
 Version:	0.15.0
 Release:	1
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 wmG is a GNOME-compliant minimalistic window manager for X.
 
-%description -l pl
-wmG jest zgodnym z GNOME minimalistycznym zarz±dc± okien dla X.
+%description -l pl.UTF-8
+wmG jest zgodnym z GNOME minimalistycznym zarzÄ…dcÄ… okien dla X.
 
 %prep
 %setup -q
