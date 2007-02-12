@@ -1,5 +1,5 @@
 Summary:	A small, lightweight GNOME window manager
-Summary(pl.UTF-8):   Mały zarządca okien do GNOME
+Summary(pl.UTF-8):	Mały zarządca okien do GNOME
 Name:		wmG
 Version:	0.15.0
 Release:	1
